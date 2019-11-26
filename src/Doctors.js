@@ -73,7 +73,7 @@ class Doctors extends React.Component{
                         <p>Address: {doctor.address}</p>
                         <p>Phone: {doctor.phone}</p>
                         <p>Id: {doctor.id}</p>
-                        <i class="material-icons md-dark" onClick={this.deleteDoctor}>delete</i>
+                        <i class="material-icons md-dark" id={doctor.id} onClick={this.deleteDoctor}>delete</i>
                     </div>
             
                   </div>
