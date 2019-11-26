@@ -47,9 +47,9 @@ class App extends React.Component {
     return (
       <Router>       
         <body>
-            <header className="App">
+            {/* <header className="App">
                 <h1>Medical app</h1>
-            </header>
+            </header> */}
             <main>
               <aside>
                 <navigation>
@@ -67,9 +67,9 @@ class App extends React.Component {
                     </div>
               </div>
             </main>
-            <footer>
+            {/* <footer>
               <h1>FOOTER</h1>
-            </footer>
+            </footer> */}
           </body>
         </Router> 
     );
