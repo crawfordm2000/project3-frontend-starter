@@ -43,6 +43,7 @@ class Appointments extends React.Component{
       };
 
     deleteAppointment = e => {
+        console.log(e.targets)
     axios({
         url: `${appointmentUrl}/appointments/${e.target.id}`,
         method: "delete"
