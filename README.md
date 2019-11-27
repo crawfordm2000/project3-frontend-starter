@@ -19,10 +19,10 @@ Medical app is a full stack  web application created to allow users to create do
 - React Bootstrap
 ## Wire frames:
 <img src="src/images/appointmentswf.png"></img>
-<img src="src/images/adoctor-wf.jpg"></img>
-<img src="src/images/adoctors-wf.png"></img>
-<img src="src/images/aform-wf.png"></img>
-<img src="src/images/anavagation-wf.png"></img>
+<img src="src/images/doctor-wf.jpg"></img>
+<img src="src/images/doctors-wf.png"></img>
+<img src="src/images/form-wf.png"></img>
+<img src="src/images/navagation-wf.png"></img>
 ## ERD
 <img src="src/images/ERD diagram.jpg"></img>
 ## User stories:
