@@ -84,12 +84,13 @@ class Doctors extends React.Component{
             <div id="doctorsDiv">
               
               
-              <h1>Create Doctor Profile</h1>
-                    <form onSubmit={this.createDoctor} onChange={e => this.handleChange(e)}>
-                      Name: <input type="text" name="name" />
-                      Address: <input type="text" name="address" />
-                      Phone: <input type="number" name="phone" />
-                      <input type="submit" value="New Doctor Submit" />
+              
+                    <form className="doctorCreateContainer" onSubmit={this.createDoctor} onChange={e => this.handleChange(e)}>
+                    <h3 className="input">Create Doctor Profile</h3>
+                      Name: <input className="input" type="text" name="name" />
+                      Address: <input className="input" type="text" name="address" />
+                      Phone: <input className="input" type="number" name="phone" />
+                      <input className="button" type="submit" value="Create" />
                     </form>
               <ul>{doctorEls}</ul>
             </div>

@@ -1,7 +1,8 @@
 .patientsCardDiv{
-    background-color: #CC4C4C;
+    background-color:rgb(131, 109, 109);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
-    border: solid white 1px;
+    border: solid rgb(53, 53, 53) 1px;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
@@ -10,4 +11,49 @@
 #patientDiv{
     display: flex;
     flex-direction: row;
+    border: 1px solid green;
 }
+
+.patientCreateContainer {
+    border: solid white 1px;
+    color: white;
+    border-radius: 5px;
+    background-color: #CC4C4C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    width: 25%;
+    height: 100%;  
+    padding-bottom: 2.5em;;
+}
+
+.patientUpdateContainer {
+    border: solid white 1px;
+    color: white;
+    border-radius: 5px;
+    background-color: #CC4C4C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    width: 25%;
+    height: 100%; 
+       
+}
+
+.input {
+    width: 70%;
+    height: 15%;
+    margin: 0 auto;
+    
+}
+
+.button {
+    width: 30%;
+    height: 15%;
+    margin-left: 40%;
+    margin-top: 2em;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+

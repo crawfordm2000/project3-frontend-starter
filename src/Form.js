@@ -48,7 +48,7 @@ class Form extends React.Component{
         })
         return(
             <form id="appointmentFormTag" onChange={e => this.handleChange(e)} onSubmit={e => this.handleSubmit(e)}>
-                <h1>Schedule an appointment</h1>
+                <h1>Create Appointment</h1>
                 <label>Appointment date:</label>
                 <input type="date" name='date'/>
                 <label>Appointment time:</label>

@@ -34,18 +34,7 @@ class Navagation extends React.Component{
                     </div> */}
                     <div id="navagationDiv">
                     <ul id="navagationUl">
-                    <Link to="/">
-                        <div className="navagationLinkDiv">
-                            <li className="navagationLis">
-                                
-                                    <i class="material-icons">home</i>
-                                
-                                    <p>Home</p>
-                                
-                            </li>
-                        </div>
-                        </Link>
-                        
+                    
                         <Link to="/doctors">
 
                         <div className="navagationLinkDiv">
@@ -73,7 +62,7 @@ class Navagation extends React.Component{
                             <li className="navagationLis">
                                 <i class="material-icons">calendar_today</i>
                                 
-                                    <p>Shedule an apointment</p>
+                                    <p>Create Appointment</p>
                             </li>
                         </div>
                         </Link>

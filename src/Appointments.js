@@ -40,6 +40,7 @@ class Appointments extends React.Component{
           this.setState({ appointment: response.data.appointments });
         });
       };
+
     deleteAppointment = e => {
     axios({
         url: `${appointmentUrl}/appointments/${e.target.id}`,
@@ -48,6 +49,7 @@ class Appointments extends React.Component{
         this.setState({ appointments: response.data.appointments });
     });
     };
+
     render() {
         const appointmentEls = this.state.appointments.map(appointment => {
             return (
@@ -62,23 +64,8 @@ class Appointments extends React.Component{
           });
     return(
         <div id="appointmentDiv">
-            {/* <p>1/11/21</p>
-            <p>8:45 A.M</p>
-            <p>Dr.Murphy</p>
-            <p>George Mandrith</p>
-            <button><i class="material-icons md-dark">edit</i></button>
-                      <button onClick={this.deleteDoctor}><i class="material-icons md-dark">delete</i></button> */}
             <ul>{appointmentEls}</ul>
         </div>
     )}
 }
 export default Appointments;
-// <li key={appointment.id}>
-        //   {appointment.time} --{appointment.date} --{appointment.patientId} --{appointment.doctorId}
-        //   <button id={appointment.id} onClick={this.deleteAppointment}>
-        //     Delete Appointment
-        //   </button>
-        //   {/* <button id={appointment.id} onClick={this.createAppointment}>
-        //     Create Appointment
-        //   </button> */}
-        // </li>
