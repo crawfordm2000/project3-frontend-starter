@@ -24,7 +24,7 @@ Medical app is a full stack  web application created to allow users to create do
 <img src="src/images/form-wf.png"></img>
 <img src="src/images/navagation-wf.png"></img>
 ## ERD
-<img src="src/images/ERD diagram.jpg"></img>
+<img src="src/images/_ERDiagram.jpg"></img>
 ## User stories:
  - As a user I want to be able to open (application name) and see all my pending and past   appointments.
 - As a user I want to be able to track all my doctors and contact information.
