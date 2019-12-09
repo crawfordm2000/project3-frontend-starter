@@ -82,9 +82,6 @@ class Doctors extends React.Component{
         });
         return(
             <div id="doctorsDiv">
-              
-              
-              
                     <form className="doctorCreateContainer" onSubmit={this.createDoctor} onChange={e => this.handleChange(e)}>
                     <h3 className="input">Create Doctor Profile</h3>
                       Name: <input className="input" type="text" name="name" />

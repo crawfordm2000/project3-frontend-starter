@@ -16,7 +16,10 @@ import Appointments from './Appointments';
 import Home from './Home';
 import Header from './Header';
 // const databaseUrl = process.env.HEROKU_DB_URL || 'http://localhost:3000'
-const databaseUrl = 'https://project3-backend-test.herokuapp.com'
+// const databaseUrl = 'https://scheduler-api-backend.herokuapp.com'
+
+const herokuBackendUrl = 'https://scheduler-api-backend.herokuapp.com'
+const databaseUrl = process.env.NODE_ENV === 'production' ? herokuBackendUrl : 'http://localhost:3000'
 
 
 
