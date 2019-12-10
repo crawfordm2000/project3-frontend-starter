@@ -48,7 +48,7 @@ class Form extends React.Component{
       handleSubmit = e => {
         e.preventDefault()
             axios({
-              url: `${appointmentUrl}api/appointments`,
+              url: `${appointmentUrl}/api/appointments`,
               method: "post",
               data: this.state.newAppointment
             }).then(response => {
