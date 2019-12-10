@@ -16,7 +16,7 @@ class Form extends React.Component{
     }
     getPatients = () => {
         axios({
-            url: `${appointmentUrl}api/patients`,
+            url: `${appointmentUrl}/api/patients`,
             method: 'GET'
         })
         .then(response => {
@@ -27,7 +27,7 @@ class Form extends React.Component{
 
     getDoctors = () => {
         axios({
-          url: `${appointmentUrl}api/doctors`,
+          url: `${appointmentUrl}/api/doctors`,
           method: "get"
         }).then(response => {
           this.setState({
