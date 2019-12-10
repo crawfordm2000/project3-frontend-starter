@@ -3,7 +3,7 @@ import React from 'react';
 // import './App.css';
 import './form.css'
 import axios from 'axios';
-const appointmentUrl = 'http://localhost:3000/api';
+const appointmentUrl = 'https://scheduler-api-backend.herokuapp.com';
 class Form extends React.Component{
         state = {
             newAppointment: {},
@@ -16,7 +16,7 @@ class Form extends React.Component{
     }
     getPatients = () => {
         axios({
-            url: `${appointmentUrl}/patients`,
+            url: `${appointmentUrl}api/patients`,
             method: 'GET'
         })
         .then(response => {
@@ -27,7 +27,7 @@ class Form extends React.Component{
 
     getDoctors = () => {
         axios({
-          url: `${appointmentUrl}/doctors`,
+          url: `${appointmentUrl}api/doctors`,
           method: "get"
         }).then(response => {
           this.setState({
@@ -48,7 +48,7 @@ class Form extends React.Component{
       handleSubmit = e => {
         e.preventDefault()
             axios({
-              url: `${appointmentUrl}/appointments`,
+              url: `${appointmentUrl}api/appointments`,
               method: "post",
               data: this.state.newAppointment
             }).then(response => {
