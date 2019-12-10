@@ -22,7 +22,7 @@ class Doctors extends React.Component{
     }
     getDoctors = () => {
       axios({
-        url: `${doctorUrl}/doctors`,
+        url: `${doctorUrl}/api/doctors`,
         method: "get"
       }).then(response => {
         this.setState({
@@ -34,7 +34,7 @@ class Doctors extends React.Component{
     createDoctor = e => {
       e.preventDefault();
       axios({
-        url: `${doctorUrl}/doctors`,
+        url: `${doctorUrl}/api/doctors`,
         method: "post",
         data: { newDoctor: this.state.newDoctor }
       }).then(response => {
@@ -56,7 +56,7 @@ class Doctors extends React.Component{
     };
     deleteDoctor = e => {
       axios({
-        url: `${doctorUrl}/doctors/${e.target.id}`,
+        url: `${doctorUrl}/api/doctors/${e.target.id}`,
         method: "delete"
       }).then(response => {
         this.setState({ doctors: response.data.doctors });

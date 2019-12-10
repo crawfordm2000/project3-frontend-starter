@@ -19,7 +19,7 @@ class Appointments extends React.Component{
     }
     getAppointments = () => {
         axios({
-            url: `${appointmentUrl}/appointments`,
+            url: `${appointmentUrl}/api/appointments`,
             method: "get"
         }).then(response => {
             console.log('response')
@@ -34,7 +34,7 @@ class Appointments extends React.Component{
     createAppointment = e => {
         e.preventDefault();
         axios({
-        url: `${appointmentUrl}/appointments`,
+        url: `${appointmentUrl}/api/appointments`,
           method: "post",
           data: { newAppointment: this.state.newAppointment }
         }).then(response => {
@@ -45,7 +45,7 @@ class Appointments extends React.Component{
     deleteAppointment = e => {
         console.log(e.targets)
     axios({
-        url: `${appointmentUrl}/appointments/${e.target.id}`,
+        url: `${appointmentUrl}/api/appointments/${e.target.id}`,
         method: "delete"
     }).then(response => {
         this.setState({ appointments: response.data.appointments });
