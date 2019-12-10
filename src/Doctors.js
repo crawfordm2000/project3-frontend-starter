@@ -4,7 +4,7 @@ import axios from 'axios';
 import './doctors.css';
 
 
-const doctorUrl = 'http://localhost:3000/api';
+const doctorUrl = 'https://scheduler-api-backend.herokuapp.com';
 
 
 

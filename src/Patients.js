@@ -3,7 +3,7 @@ import React from "react";
 import axios from "axios";
 import './patient.css'
 // import './App.css';
-const patientUrl = "http://localhost:3000/api";
+const patientUrl = "https://scheduler-api-backend.herokuapp.com";
 class Patients extends React.Component {
   state = {
     patients: [],
@@ -19,7 +19,7 @@ class Patients extends React.Component {
   // to Read all patients
   getPatients = () => {
     axios({
-      url: `${patientUrl}/patients`,
+      url: `${patientUrl}/api/patients`,
       method: "get"
     }).then(response => {
       this.setState({
@@ -33,7 +33,7 @@ class Patients extends React.Component {
   createPatient = e => {
     e.preventDefault();
     axios({
-      url: `${patientUrl}/patients`,
+      url: `${patientUrl}/api/patients`,
       method: "post",
       data: { newPatient: this.state.newPatient }
     }).then(response => {
@@ -60,7 +60,7 @@ class Patients extends React.Component {
     let id = this.state.newPatient.id;
     let intId = Number(id);
     axios({
-      url: `${patientUrl}/patients/${intId}`,
+      url: `${patientUrl}/api/patients/${intId}`,
       method: "put",
       data: this.state.newPatient
     }).then(response => {
@@ -83,7 +83,7 @@ class Patients extends React.Component {
   // Delete a patient
   deletePatient = e => {
     axios({
-      url: `${patientUrl}/patients/${e.target.id}`,
+      url: `${patientUrl}/api/patients/${e.target.id}`,
       method: "delete"
     }).then(response => {
       this.setState({ patients: response.data.patients });
